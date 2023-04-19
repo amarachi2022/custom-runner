@@ -6,6 +6,7 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
+    environment: staging
     steps:
       - name: html page
         uses: actions/checkout@v3
