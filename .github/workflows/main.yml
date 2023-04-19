@@ -9,7 +9,7 @@ jobs:
     environment: staging
     steps:
       - name: html page
-        uses: actions/checkout@v3
+        uses: appleboy/ssh-action@master 
         with:
           host: ${{secrets.SSH_HOST}} # IP address of the server you wish to ssh into
           key: ${{secrets.SSH_KEY}} # Private or public key of the server
