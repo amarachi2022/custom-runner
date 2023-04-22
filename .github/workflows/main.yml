@@ -6,7 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
-    environment: staging
     steps:
       - name: html page
         uses: appleboy/ssh-action@master 
